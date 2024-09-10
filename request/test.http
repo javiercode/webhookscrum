@@ -1,6 +1,12 @@
-@api = http://localhost:8000
+@api = http://localhost:3000
+# @api = https://webhookscrum.onrender.com
 
 @token = "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"
+
+
+### test
+GET {{api}}/politica
+Content-Type: application/json
 
 
 ### Login
@@ -9,45 +15,34 @@ Content-Type: application/json
 Authorization: Bearer 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
 
 {
-  "responseId": "8938bdaf-6f94-4502-97fa-b5de904a660e-2b95931e",
+  "responseId": "d1b51e9d-8422-4e90-a6be-ffc6dad21d38-0fffcc35",
   "queryResult": {
-    "queryText": "ci: Hola mundo!",
-    "action": "titulos.titulos-custom",
+    "queryText": "scrum: puedes ayudarme a definir un diagrama de secuencia?",
     "parameters": {
-      "comodin": "ci"
+      "any": "puedes ayudarme a definir un diagrama de secuencia?"
     },
     "allRequiredParamsPresent": true,
-    "fulfillmentText": "El servicio no esta disponible por el momento",
-    "fulfillmentMessages": [
+    "outputContexts": [
       {
-        "text": {
-          "text": [
-            "El servicio no esta disponible por el momento"
-          ]
-        },
-        "platform": "FACEBOOK"
-      },
-      {
-        "text": {
-          "text": [
-            "El servicio no esta disponible por el momento"
-          ]
+        "name": "projects/scrumbot-nnoi/agent/sessions/d7060b16-6274-0625-b0f8-8a557e851d65/contexts/__system_counters__",
+        "parameters": {
+          "no-input": 0,
+          "no-match": 0,
+          "any": "puedes ayudarme a definir un diagrama de secuencia?",
+          "any.original": "puedes ayudarme a definir un diagrama de secuencia?"
         }
       }
     ],
     "intent": {
-      "name": "projects/inrabot-eaxevy/locations/global/agent/intents/6bf28722-8c73-4f35-9fc6-04078e517e6a",
-      "displayName": "titulos - obtener"
+      "name": "projects/scrumbot-nnoi/agent/intents/1e81ff9c-8094-4613-b7e7-e31ee797a244",
+      "displayName": "scrum"
     },
-    "intentDetectionConfidence": 0.5817856,
-    "diagnosticInfo": {
-      "webhook_latency_ms": 415
-    },
+    "intentDetectionConfidence": 0.3262566,
     "languageCode": "es"
   },
-  "webhookStatus": {
-    "code": 14,
-    "message": "Webhook call failed. Error: UNAVAILABLE."
+  "originalDetectIntentRequest": {
+    "source": "DIALOGFLOW_CONSOLE",
+    "payload": {}
   },
-  "agentId": "ea52ef98-91dc-4d06-ab96-931f58bc984f"
+  "session": "projects/scrumbot-nnoi/agent/sessions/d7060b16-6274-0625-b0f8-8a557e851d65"
 }
