@@ -1,0 +1,53 @@
+@api = http://localhost:8000
+
+@token = "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"
+
+
+### Login
+POST {{api}}/chatbot
+Content-Type: application/json
+Authorization: Bearer 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
+
+{
+  "responseId": "8938bdaf-6f94-4502-97fa-b5de904a660e-2b95931e",
+  "queryResult": {
+    "queryText": "ci: Hola mundo!",
+    "action": "titulos.titulos-custom",
+    "parameters": {
+      "comodin": "ci"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "El servicio no esta disponible por el momento",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "El servicio no esta disponible por el momento"
+          ]
+        },
+        "platform": "FACEBOOK"
+      },
+      {
+        "text": {
+          "text": [
+            "El servicio no esta disponible por el momento"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/inrabot-eaxevy/locations/global/agent/intents/6bf28722-8c73-4f35-9fc6-04078e517e6a",
+      "displayName": "titulos - obtener"
+    },
+    "intentDetectionConfidence": 0.5817856,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 415
+    },
+    "languageCode": "es"
+  },
+  "webhookStatus": {
+    "code": 14,
+    "message": "Webhook call failed. Error: UNAVAILABLE."
+  },
+  "agentId": "ea52ef98-91dc-4d06-ab96-931f58bc984f"
+}
