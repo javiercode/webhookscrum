@@ -2,7 +2,6 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const request = require("request");
 const path = require('path');
 const router = express.Router();
 const restService = express();
@@ -71,6 +70,6 @@ restService.post("/chatbot", async function(req, res) {
 });
 
 
-restService.listen(process.env.PORT || 8000, function() {
+restService.listen(process.env.PORT || 3000, function() {
   console.log("Server up and listening");
 });
