@@ -12,24 +12,23 @@ Content-Type: application/json
 ### Login
 POST {{api}}/chatbot
 Content-Type: application/json
-Authorization: Bearer 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
 
 {
-  "responseId": "d1b51e9d-8422-4e90-a6be-ffc6dad21d38-0fffcc35",
+  "responseId": "b8d78d8f-f9c3-4a76-9c52-6aa9c1630a1d-0fffcc35",
   "queryResult": {
-    "queryText": "scrum: puedes ayudarme a definir un diagrama de secuencia?",
+    "queryText": "scrum: Me ayudas a elegir herramientas en la web para el manejo de la metodologia scrum?",
     "parameters": {
-      "any": "puedes ayudarme a definir un diagrama de secuencia?"
+      "any": "Me ayudas a elegir herramientas en la web para el manejo de la metodologia scrum?"
     },
     "allRequiredParamsPresent": true,
     "outputContexts": [
       {
-        "name": "projects/scrumbot-nnoi/agent/sessions/d7060b16-6274-0625-b0f8-8a557e851d65/contexts/__system_counters__",
+        "name": "projects/scrumbot-nnoi/agent/sessions/6badb514-8f89-4e3b-32ae-b50ba99059c9/contexts/__system_counters__",
         "parameters": {
           "no-input": 0,
           "no-match": 0,
-          "any": "puedes ayudarme a definir un diagrama de secuencia?",
-          "any.original": "puedes ayudarme a definir un diagrama de secuencia?"
+          "any": "Me ayudas a elegir herramientas en la web para el manejo de la metodologia scrum?",
+          "any.original": "Me ayudas a elegir herramientas en la web para el manejo de la metodologia scrum?"
         }
       }
     ],
@@ -37,12 +36,12 @@ Authorization: Bearer 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
       "name": "projects/scrumbot-nnoi/agent/intents/1e81ff9c-8094-4613-b7e7-e31ee797a244",
       "displayName": "scrum"
     },
-    "intentDetectionConfidence": 0.3262566,
+    "intentDetectionConfidence": 0.53980726,
     "languageCode": "es"
   },
   "originalDetectIntentRequest": {
     "source": "DIALOGFLOW_CONSOLE",
     "payload": {}
   },
-  "session": "projects/scrumbot-nnoi/agent/sessions/d7060b16-6274-0625-b0f8-8a557e851d65"
+  "session": "projects/scrumbot-nnoi/agent/sessions/6badb514-8f89-4e3b-32ae-b50ba99059c9"
 }

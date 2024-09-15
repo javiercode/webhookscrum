@@ -66,7 +66,9 @@ restService.post("/chatbot", async function(req, res,next) {
             console.log("prompt",prompt);
 
             speech = await cohere.chat({
-                message: prompt,  
+              maxTokens:50,
+              temperature:0.5,
+              message: prompt,  
             });
         } catch (error) {
             speech ={text:"Error al procesar la solicitud"};
