@@ -51,8 +51,7 @@ restService.post("/chatbot", async function(req, res,next) {
         // next()
     };
 
-    const cohere = new CohereClient({
-        // token: "hJsplBPOJPEYYjBp72aKrhnCl6koe6KvsLsZE23C",    
+    const cohere = new CohereClient({   
         token: process.env.TOKENIA,    
       });
 
@@ -66,8 +65,8 @@ restService.post("/chatbot", async function(req, res,next) {
             console.log("prompt",prompt);
 
             speech = await cohere.chat({
-              maxTokens:50,
-              temperature:0.5,
+              maxTokens:30,
+              temperature:0.2,
               message: prompt,  
             });
         } catch (error) {
